@@ -419,8 +419,6 @@ form{
     padding:12px 18px;
     font-size:14px;
 }
-
-}
 /* REAL PROJECTS GALLERY */
 
 .real-project{
@@ -432,7 +430,8 @@ form{
     font-family:'Cinzel',serif;
     color:var(--gold);
     font-size:30px;
-    margin-bottom:30px;
+    margin:0 auto 30px;
+    padding:0 15px;
 }
 
 .project-label{
@@ -446,17 +445,21 @@ form{
 
 .real-project-gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(3,1fr);
     gap:20px;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 15px;
 }
 
 .real-project-gallery img{
     width:100%;
     height:260px;
     object-fit:cover;
+    display:block;
     border-radius:15px;
     border:2px solid var(--gold);
-    transition:.3s;
+    transition:transform .3s, box-shadow .3s;
 }
 
 .real-project-gallery img:hover{
@@ -464,19 +467,49 @@ form{
     box-shadow:0 0 20px rgba(212,175,55,.35);
 }
 
-/* MOBILE */
-@media(max-width:768px){
+
+/* TABLET */
+
+@media (max-width:900px){
+
+    .real-project-gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* PHONE */
+
+@media (max-width:600px){
+
+    .real-project{
+        margin-bottom:50px;
+    }
 
     .real-project-title{
-        font-size:24px;
+        font-size:22px;
+        line-height:1.4;
+        margin-bottom:22px;
+    }
+
+    .project-label{
+        font-size:17px;
+        margin:20px 0 12px;
     }
 
     .real-project-gallery{
         grid-template-columns:1fr;
+        gap:15px;
+        padding:0 12px;
     }
 
     .real-project-gallery img{
-        height:220px;
+        width:100%;
+        height:auto;
+        max-height:320px;
+        object-fit:cover;
+        border-radius:12px;
     }
 
 }
