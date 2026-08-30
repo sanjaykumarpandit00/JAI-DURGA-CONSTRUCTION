@@ -513,6 +513,79 @@ form{
     }
 
 }
+  /* FINAL REAL PROJECT FIX */
+
+.real-project {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 70px;
+}
+
+.real-project-title {
+    text-align: center !important;
+    font-family: 'Cinzel', serif !important;
+    color: var(--gold) !important;
+    font-size: 30px !important;
+    margin: 0 0 30px !important;
+}
+
+.project-label {
+    text-align: center !important;
+    color: var(--gold) !important;
+    font-size: 20px !important;
+    margin: 25px 0 15px !important;
+}
+
+.real-project-gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
+}
+
+.real-project-gallery img {
+    width: 100% !important;
+    height: 260px !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-radius: 15px !important;
+    border: 2px solid var(--gold) !important;
+}
+
+
+/* PHONE */
+
+@media (max-width: 600px) {
+
+    .real-project {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .real-project-title {
+        font-size: 23px !important;
+        line-height: 1.4 !important;
+        padding: 0 15px !important;
+    }
+
+    .real-project-gallery {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        padding: 0 12px !important;
+    }
+
+    .real-project-gallery img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 350px !important;
+        object-fit: cover !important;
+    }
+
+}
 </style>
   <meta name="google-site-verification" content="pazdq8yWqddvUB8O1BFWKOHl3TWnn-oDevBzaWNalQk" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
