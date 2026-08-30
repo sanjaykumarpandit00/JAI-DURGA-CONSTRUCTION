@@ -421,7 +421,65 @@ form{
 }
 
 }
+/* REAL PROJECTS GALLERY */
 
+.real-project{
+    margin-bottom:70px;
+}
+
+.real-project-title{
+    text-align:center;
+    font-family:'Cinzel',serif;
+    color:var(--gold);
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.project-label{
+    text-align:center;
+    color:var(--gold);
+    font-size:20px;
+    font-weight:600;
+    margin:25px 0 15px;
+    letter-spacing:1px;
+}
+
+.real-project-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.real-project-gallery img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    border:2px solid var(--gold);
+    transition:.3s;
+}
+
+.real-project-gallery img:hover{
+    transform:scale(1.02);
+    box-shadow:0 0 20px rgba(212,175,55,.35);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .real-project-title{
+        font-size:24px;
+    }
+
+    .real-project-gallery{
+        grid-template-columns:1fr;
+    }
+
+    .real-project-gallery img{
+        height:220px;
+    }
+
+}
 </style>
   <meta name="google-site-verification" content="pazdq8yWqddvUB8O1BFWKOHl3TWnn-oDevBzaWNalQk" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -511,6 +569,107 @@ Our mission is <u>quality, trust and excellence</u>.
 </div>
 
 </section>
+  <!-- REAL PROJECTS -->
+<section>
+
+<h2 class="title">Our Projects</h2>
+
+
+<!-- PROJECT 1 -->
+<div class="real-project">
+
+<h3 class="real-project-title">
+Residential Home, Vidhan Sabha
+</h3>
+
+<h4 class="project-label">BEFORE</h4>
+
+<div class="real-project-gallery">
+
+<img src="p1.b1.png">
+<img src="p1.b2.png">
+<img src="p1.b3.png">
+<img src="p1.b4.png">
+<img src="p1.b5.png">
+
+</div>
+
+
+<h4 class="project-label">AFTER</h4>
+
+<div class="real-project-gallery">
+
+<img src="p1.a1.png">
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 2 -->
+<div class="real-project">
+
+<h3 class="real-project-title">
+Vikas Bhavan, Rudraprayag
+</h3>
+
+<div class="real-project-gallery">
+
+<img src="p2.1.png">
+<img src="p2.2.png">
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 3 -->
+<div class="real-project">
+
+<h3 class="real-project-title">
+Santla Devi Vipassana Meditation Centre
+</h3>
+
+<div class="real-project-gallery">
+
+<img src="p3.b1.png">
+<img src="p3.b2.png">
+<img src="p3.b3.png">
+<img src="p3.b4.png">
+<img src="p3.b5.png">
+<img src="p3.b6.png">
+<img src="p3.b7.png">
+<img src="p3.b8.png">
+<img src="p3.b9.png">
+<img src="p3.b10.png">
+<img src="p3.b11.png">
+<img src="p3a1.png">
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 4 -->
+<div class="real-project">
+
+<h3 class="real-project-title">
+Bangali Kothi, Dehradun
+</h3>
+
+<div class="real-project-gallery">
+
+<img src="p4b1.png">
+<img src="p4b2.png">
+<img src="p4a1.png">
+
+</div>
+
+</div>
+
+
+</section>
+<!-- END REAL PROJECTS -->
   <section>
 
 <h2 class="title">Request a Free Quote</h2>
